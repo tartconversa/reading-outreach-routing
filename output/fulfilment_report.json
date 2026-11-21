@@ -1,0 +1,560 @@
+{
+  "report": "fulfilment_and_coverage",
+  "household_promises": [
+    {
+      "confirmed_id": "CW1",
+      "household": "H001",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P003",
+        "P004"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    },
+    {
+      "confirmed_id": "CW1",
+      "household": "H002",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P005",
+        "P006"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    },
+    {
+      "confirmed_id": "CW2",
+      "household": "H003",
+      "site_id": "S4",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P007",
+        "P008"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    }
+  ],
+  "promise_summary": {
+    "kept": 3,
+    "equivalent_substitute": 0,
+    "outstanding": 0,
+    "rule": "偏远站点缺席不得由邻近站点出席人数抵消"
+  },
+  "cancellations": [],
+  "session_reconciliation": [
+    {
+      "planned_session_id": "CW1",
+      "site_id": "S7",
+      "on": "2026-08-03",
+      "planned": true,
+      "cancelled": false,
+      "planned_reachable": 20,
+      "attended_roster": 18,
+      "attended_visitors": 1,
+      "rejected_requests": 2,
+      "no_shows": 2,
+      "seats_utilization": 0.75,
+      "flags": [
+        "1 名临时访客不在名册，不计入居民基数",
+        "2 个被拒请求，代表未满足的席位需求",
+        "2 名计划可达但未到，需另查个人原因"
+      ]
+    },
+    {
+      "planned_session_id": "PL-003",
+      "site_id": "S5",
+      "on": "2026-08-03",
+      "planned": true,
+      "cancelled": true,
+      "planned_reachable": 20,
+      "attended_roster": 0,
+      "attended_visitors": 0,
+      "rejected_requests": 0,
+      "no_shows": 0,
+      "seats_utilization": null,
+      "flags": [
+        "供给侧取消（道路临时管制），缺席不得解释为需求降低"
+      ]
+    },
+    {
+      "planned_session_id": "CW2",
+      "site_id": "S4",
+      "on": "2026-08-03",
+      "planned": true,
+      "cancelled": false,
+      "planned_reachable": 0,
+      "attended_roster": 0,
+      "attended_visitors": 0,
+      "rejected_requests": 0,
+      "no_shows": 0,
+      "seats_utilization": 0.0,
+      "flags": []
+    },
+    {
+      "planned_session_id": "PL-004",
+      "site_id": "S1",
+      "on": "2026-08-03",
+      "planned": true,
+      "cancelled": false,
+      "planned_reachable": 20,
+      "attended_roster": 18,
+      "attended_visitors": 1,
+      "rejected_requests": 0,
+      "no_shows": 2,
+      "seats_utilization": 0.75,
+      "flags": [
+        "1 名临时访客不在名册，不计入居民基数",
+        "2 名计划可达但未到，需另查个人原因"
+      ]
+    },
+    {
+      "planned_session_id": "PL-005",
+      "site_id": "S6",
+      "on": "2026-08-03",
+      "planned": true,
+      "cancelled": false,
+      "planned_reachable": 19,
+      "attended_roster": 17,
+      "attended_visitors": 0,
+      "rejected_requests": 0,
+      "no_shows": 2,
+      "seats_utilization": 0.708,
+      "flags": [
+        "2 名计划可达但未到，需另查个人原因"
+      ]
+    }
+  ],
+  "coverage_audit": {
+    "served_people": [
+      "P001",
+      "P006",
+      "P007",
+      "P010",
+      "P015",
+      "P016",
+      "P019",
+      "P024",
+      "P025",
+      "P028",
+      "P033",
+      "P034",
+      "P037",
+      "P042",
+      "P043",
+      "P046",
+      "P051",
+      "P052",
+      "P055",
+      "P060",
+      "P061",
+      "P064",
+      "P069",
+      "P070",
+      "P073",
+      "P079",
+      "P082",
+      "P087",
+      "P088",
+      "P091",
+      "P096",
+      "P097",
+      "P100",
+      "P105",
+      "P106",
+      "P109",
+      "P114",
+      "P115",
+      "P118",
+      "P123",
+      "P124",
+      "P127",
+      "P132",
+      "P133",
+      "P136",
+      "P141",
+      "P142",
+      "P145",
+      "P150",
+      "P151",
+      "P154",
+      "P159",
+      "P160"
+    ],
+    "newly_covered_people": [
+      "P001"
+    ],
+    "repeat_served_people": [
+      "P006",
+      "P007",
+      "P010",
+      "P015",
+      "P016",
+      "P019",
+      "P024",
+      "P025",
+      "P028",
+      "P033",
+      "P034",
+      "P037",
+      "P042",
+      "P043",
+      "P046",
+      "P051",
+      "P052",
+      "P055",
+      "P060",
+      "P061",
+      "P064",
+      "P069",
+      "P070",
+      "P073",
+      "P079",
+      "P082",
+      "P087",
+      "P088",
+      "P091",
+      "P096",
+      "P097",
+      "P100",
+      "P105",
+      "P106",
+      "P109",
+      "P114",
+      "P115",
+      "P118",
+      "P123",
+      "P124",
+      "P127",
+      "P132",
+      "P133",
+      "P136",
+      "P141",
+      "P142",
+      "P145",
+      "P150",
+      "P151",
+      "P154",
+      "P159",
+      "P160"
+    ],
+    "served_households": [
+      "H000",
+      "H002",
+      "H003",
+      "H004",
+      "H007",
+      "H009",
+      "H011",
+      "H012",
+      "H013",
+      "H016",
+      "H018",
+      "H020",
+      "H021",
+      "H022",
+      "H025",
+      "H027",
+      "H029",
+      "H030",
+      "H031",
+      "H034",
+      "H036",
+      "H039",
+      "H040",
+      "H043",
+      "H045",
+      "H047",
+      "H048",
+      "H049",
+      "H052",
+      "H054",
+      "H056",
+      "H057",
+      "H058",
+      "H061",
+      "H063",
+      "H065",
+      "H066",
+      "H067",
+      "H070",
+      "H072",
+      "H074",
+      "H075",
+      "H076",
+      "H079"
+    ],
+    "visitor_attendances": 2,
+    "by_site": {
+      "S7": {
+        "visitors": 1,
+        "cancelled": false,
+        "rejected": 2,
+        "unique_served": 18,
+        "newly_covered": [],
+        "repeat_served": [
+          "P007",
+          "P016",
+          "P025",
+          "P034",
+          "P043",
+          "P052",
+          "P061",
+          "P070",
+          "P079",
+          "P088",
+          "P097",
+          "P106",
+          "P115",
+          "P124",
+          "P133",
+          "P142",
+          "P151",
+          "P160"
+        ],
+        "households": [
+          "H003",
+          "H007",
+          "H012",
+          "H016",
+          "H021",
+          "H025",
+          "H030",
+          "H034",
+          "H039",
+          "H043",
+          "H048",
+          "H052",
+          "H057",
+          "H061",
+          "H066",
+          "H070",
+          "H075",
+          "H079"
+        ]
+      },
+      "S5": {
+        "visitors": 0,
+        "cancelled": true,
+        "rejected": 0,
+        "unique_served": 0,
+        "newly_covered": [],
+        "repeat_served": [],
+        "households": []
+      },
+      "S4": {
+        "visitors": 0,
+        "cancelled": false,
+        "rejected": 0,
+        "unique_served": 0,
+        "newly_covered": [],
+        "repeat_served": [],
+        "households": []
+      },
+      "S1": {
+        "visitors": 1,
+        "cancelled": false,
+        "rejected": 0,
+        "unique_served": 18,
+        "newly_covered": [
+          "P001"
+        ],
+        "repeat_served": [
+          "P010",
+          "P019",
+          "P028",
+          "P037",
+          "P046",
+          "P055",
+          "P064",
+          "P073",
+          "P082",
+          "P091",
+          "P100",
+          "P109",
+          "P118",
+          "P127",
+          "P136",
+          "P145",
+          "P154"
+        ],
+        "households": [
+          "H000",
+          "H004",
+          "H009",
+          "H013",
+          "H018",
+          "H022",
+          "H027",
+          "H031",
+          "H036",
+          "H040",
+          "H045",
+          "H049",
+          "H054",
+          "H058",
+          "H063",
+          "H067",
+          "H072",
+          "H076"
+        ]
+      },
+      "S6": {
+        "visitors": 0,
+        "cancelled": false,
+        "rejected": 0,
+        "unique_served": 17,
+        "newly_covered": [],
+        "repeat_served": [
+          "P006",
+          "P015",
+          "P024",
+          "P033",
+          "P042",
+          "P051",
+          "P060",
+          "P069",
+          "P087",
+          "P096",
+          "P105",
+          "P114",
+          "P123",
+          "P132",
+          "P141",
+          "P150",
+          "P159"
+        ],
+        "households": [
+          "H002",
+          "H007",
+          "H011",
+          "H016",
+          "H020",
+          "H025",
+          "H029",
+          "H034",
+          "H043",
+          "H047",
+          "H052",
+          "H056",
+          "H061",
+          "H065",
+          "H070",
+          "H074",
+          "H079"
+        ]
+      }
+    },
+    "note": "新增覆盖=本周首次服务的名册人员；重复服务=历史八周已服务过；临时访客只计流量，不进入居民基数；取消场次不计覆盖"
+  },
+  "next_round_demand_signals": [
+    {
+      "site_id": "S1",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 2,
+      "outstanding_promises": 0,
+      "signal": "计划可达但未到，需回访个人原因而非削减服务",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S2",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "无额外调整信号，维持基础需求估计",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S3",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "无额外调整信号，维持基础需求估计",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S4",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "无额外调整信号，维持基础需求估计",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S5",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 1,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "取消场次产生补兑需求，权重不下调",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S6",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 2,
+      "outstanding_promises": 0,
+      "signal": "计划可达但未到，需回访个人原因而非削减服务",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S7",
+      "carryover_rejected": 2,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 2,
+      "outstanding_promises": 0,
+      "signal": "席位拒绝累积，下一轮优先扩容或加场；计划可达但未到，需回访个人原因而非削减服务",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S8",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "无额外调整信号，维持基础需求估计",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    },
+    {
+      "site_id": "S9",
+      "carryover_rejected": 0,
+      "carryover_cancelled": 0,
+      "carryover_no_show": 0,
+      "outstanding_promises": 0,
+      "signal": "无额外调整信号，维持基础需求估计",
+      "detail": {
+        "rule": "取消不视为需求降低；临时访客不计入居民基数；拒绝与未兑现承诺按加权需求信号结转"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "report": "cancellation",
+  "cancelled_session_id": "CW1",
+  "reason": "车辆故障",
+  "equivalent_session_id": null,
+  "outstanding_households": [
+    "H001",
+    "H002"
+  ],
+  "makegood_required": true,
+  "household_outcomes": [
+    {
+      "confirmed_id": "CW1",
+      "household": "H001",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P003",
+        "P004"
+      ],
+      "status": "outstanding",
+      "substitute_session_id": null,
+      "reason": "取消后无等效服务，承诺未兑现，须后续补兑且不得由邻近站点人数抵消"
+    },
+    {
+      "confirmed_id": "CW1",
+      "household": "H002",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P005",
+        "P006"
+      ],
+      "status": "outstanding",
+      "substitute_session_id": null,
+      "reason": "取消后无等效服务，承诺未兑现，须后续补兑且不得由邻近站点人数抵消"
+    }
+  ]
+}

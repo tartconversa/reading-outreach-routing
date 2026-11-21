@@ -10,3 +10,6 @@ coverage/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# 分析应用生成的结构化结果（原始资料 materials/ 保持只读）
+output/

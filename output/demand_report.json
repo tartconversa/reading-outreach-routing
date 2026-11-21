@@ -1,0 +1,1064 @@
+{
+  "report": "demand_funnel",
+  "materials_fingerprint": "6d0e44f586d89afdd6f57cfdf6080944701136f91df03ed0dac235fc826a44ce",
+  "county_level": {
+    "potential": {
+      "point_estimate": 378.0,
+      "standard_error": 0.0,
+      "ci95": [
+        378.0,
+        378.0
+      ],
+      "observed_people": 180,
+      "observed_households": 90,
+      "basis": "全县合成名册；跨站点按人去重，家庭聚类稳健方差"
+    },
+    "willing": {
+      "point_estimate": 356.1,
+      "standard_error": 6.497,
+      "ci95": [
+        343.21,
+        368.99
+      ],
+      "observed_people": 169,
+      "observed_households": 90,
+      "basis": "全县合成名册；跨站点按人去重，家庭聚类稳健方差"
+    },
+    "reachable_any_site": {
+      "point_estimate": 164.7,
+      "standard_error": 15.405,
+      "ci95": [
+        134.14,
+        195.26
+      ],
+      "observed_people": 79,
+      "observed_households": 60,
+      "basis": "全县合成名册；跨站点按人去重，家庭聚类稳健方差"
+    },
+    "dedup_fact": {
+      "raw_need_rows": 240,
+      "unique_people": 180,
+      "people_in_both_sources": 60
+    }
+  },
+  "sites": [
+    {
+      "site_id": "S1",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 13,
+        "site_source_rows": 14
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 41.1,
+          "standard_error": 0.0,
+          "ci95": [
+            41.1,
+            41.1
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S1 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 39.9,
+          "standard_error": 1.228,
+          "ci95": [
+            37.39,
+            42.41
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S1 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 41.1,
+          "standard_error": 0.0,
+          "ci95": [
+            41.1,
+            41.1
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S1 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 2.4,
+            "standard_error": 1.733,
+            "ci95": [
+              0.0,
+              5.94
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S1 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 2,
+          "rows": 3,
+          "weighted_estimate": {
+            "point_estimate": 4.2,
+            "standard_error": 2.475,
+            "ci95": [
+              0.0,
+              9.25
+            ],
+            "observed_people": 3,
+            "observed_households": 3,
+            "basis": "站点 S1 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 17,
+          "rows": 22,
+          "weighted_estimate": {
+            "point_estimate": 37.5,
+            "standard_error": 2.118,
+            "ci95": [
+              33.17,
+              41.83
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S1 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 7,
+        "held_sessions": 6,
+        "cancelled_sessions": 1,
+        "cancelled_dates": [
+          "2026-07-26"
+        ],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S2",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 14,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 42.9,
+          "standard_error": 0.0,
+          "ci95": [
+            42.9,
+            42.9
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S2 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 40.2,
+          "standard_error": 2.668,
+          "ci95": [
+            34.75,
+            45.65
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S2 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 0.0,
+          "standard_error": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "observed_people": 0,
+          "observed_households": 0,
+          "basis": "站点 S2 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 3.6,
+            "standard_error": 2.531,
+            "ci95": [
+              0.0,
+              8.77
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S2 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 2.4,
+            "standard_error": 1.737,
+            "ci95": [
+              0.0,
+              5.95
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S2 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 17,
+          "rows": 23,
+          "weighted_estimate": {
+            "point_estimate": 39.9,
+            "standard_error": 2.178,
+            "ci95": [
+              35.45,
+              44.35
+            ],
+            "observed_people": 18,
+            "observed_households": 18,
+            "basis": "站点 S2 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 7,
+        "held_sessions": 6,
+        "cancelled_sessions": 1,
+        "cancelled_dates": [
+          "2026-06-12"
+        ],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S3",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 13,
+        "site_source_rows": 14
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 42.6,
+          "standard_error": 0.0,
+          "ci95": [
+            42.6,
+            42.6
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S3 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 38.1,
+          "standard_error": 3.097,
+          "ci95": [
+            31.78,
+            44.42
+          ],
+          "observed_people": 18,
+          "observed_households": 18,
+          "basis": "站点 S3 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 0.0,
+          "standard_error": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "observed_people": 0,
+          "observed_households": 0,
+          "basis": "站点 S3 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 4.2,
+            "standard_error": 2.934,
+            "ci95": [
+              0.0,
+              10.19
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S3 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 4,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.756,
+            "ci95": [
+              0.0,
+              11.03
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S3 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 15,
+          "rows": 21,
+          "weighted_estimate": {
+            "point_estimate": 38.4,
+            "standard_error": 2.485,
+            "ci95": [
+              33.33,
+              43.47
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S3 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 6,
+        "cancelled_sessions": 0,
+        "cancelled_dates": [],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S4",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 14,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 42.3,
+          "standard_error": 0.0,
+          "ci95": [
+            42.3,
+            42.3
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S4 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 40.5,
+          "standard_error": 1.818,
+          "ci95": [
+            36.79,
+            44.21
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S4 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 0.0,
+          "standard_error": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "observed_people": 0,
+          "observed_households": 0,
+          "basis": "站点 S4 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 3.638,
+            "ci95": [
+              0.0,
+              12.83
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S4 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 4,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.755,
+            "ci95": [
+              0.0,
+              11.03
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S4 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 16,
+          "rows": 21,
+          "weighted_estimate": {
+            "point_estimate": 37.5,
+            "standard_error": 2.889,
+            "ci95": [
+              31.6,
+              43.4
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S4 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 5,
+        "cancelled_sessions": 1,
+        "cancelled_dates": [
+          "2026-06-23"
+        ],
+        "total_attendances": 50,
+        "unique_attendees": 50,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S5",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 13,
+        "site_source_rows": 14
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 42.0,
+          "standard_error": 0.0,
+          "ci95": [
+            42.0,
+            42.0
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S5 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 39.3,
+          "standard_error": 1.95,
+          "ci95": [
+            35.32,
+            43.28
+          ],
+          "observed_people": 18,
+          "observed_households": 18,
+          "basis": "站点 S5 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 42.0,
+          "standard_error": 0.0,
+          "ci95": [
+            42.0,
+            42.0
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S5 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 6.0,
+            "standard_error": 3.949,
+            "ci95": [
+              0.0,
+              14.06
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S5 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 3,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.753,
+            "ci95": [
+              0.0,
+              11.02
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S5 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 16,
+          "rows": 21,
+          "weighted_estimate": {
+            "point_estimate": 36.6,
+            "standard_error": 3.31,
+            "ci95": [
+              29.84,
+              43.36
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S5 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 6,
+        "cancelled_sessions": 0,
+        "cancelled_dates": [],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S6",
+      "remote": false,
+      "registration_dedup": {
+        "raw_rows": 27,
+        "duplicate_rows_removed": 7,
+        "school_source_rows": 14,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 41.7,
+          "standard_error": 0.0,
+          "ci95": [
+            41.7,
+            41.7
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S6 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 38.7,
+          "standard_error": 2.937,
+          "ci95": [
+            32.7,
+            44.7
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S6 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 40.2,
+          "standard_error": 1.525,
+          "ci95": [
+            37.09,
+            43.31
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S6 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 3.0,
+            "standard_error": 2.138,
+            "ci95": [
+              0.0,
+              7.37
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S6 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 3,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.75,
+            "ci95": [
+              0.0,
+              11.02
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S6 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 16,
+          "rows": 21,
+          "weighted_estimate": {
+            "point_estimate": 37.8,
+            "standard_error": 2.293,
+            "ci95": [
+              33.12,
+              42.48
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S6 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 5,
+        "cancelled_sessions": 1,
+        "cancelled_dates": [
+          "2026-07-04"
+        ],
+        "total_attendances": 50,
+        "unique_attendees": 50,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 7 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S7",
+      "remote": true,
+      "registration_dedup": {
+        "raw_rows": 26,
+        "duplicate_rows_removed": 6,
+        "school_source_rows": 13,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 41.4,
+          "standard_error": 0.0,
+          "ci95": [
+            41.4,
+            41.4
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S7 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 39.0,
+          "standard_error": 2.385,
+          "ci95": [
+            34.13,
+            43.87
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S7 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 41.4,
+          "standard_error": 0.0,
+          "ci95": [
+            41.4,
+            41.4
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S7 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 3.6,
+            "standard_error": 2.555,
+            "ci95": [
+              0.0,
+              8.82
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S7 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 4,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.747,
+            "ci95": [
+              0.0,
+              11.01
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S7 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 15,
+          "rows": 20,
+          "weighted_estimate": {
+            "point_estimate": 37.5,
+            "standard_error": 2.291,
+            "ci95": [
+              32.82,
+              42.18
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S7 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 6,
+        "cancelled_sessions": 0,
+        "cancelled_dates": [],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 6 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S8",
+      "remote": true,
+      "registration_dedup": {
+        "raw_rows": 26,
+        "duplicate_rows_removed": 6,
+        "school_source_rows": 13,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 41.1,
+          "standard_error": 0.0,
+          "ci95": [
+            41.1,
+            41.1
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S8 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 39.0,
+          "standard_error": 2.102,
+          "ci95": [
+            34.71,
+            43.29
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S8 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 0.0,
+          "standard_error": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "observed_people": 0,
+          "observed_households": 0,
+          "basis": "站点 S8 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 1,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 4.8,
+            "standard_error": 3.278,
+            "ci95": [
+              0.0,
+              11.49
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S8 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 4,
+          "rows": 4,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 2.743,
+            "ci95": [
+              0.0,
+              11.0
+            ],
+            "observed_people": 4,
+            "observed_households": 4,
+            "basis": "站点 S8 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 16,
+          "rows": 20,
+          "weighted_estimate": {
+            "point_estimate": 36.6,
+            "standard_error": 2.673,
+            "ci95": [
+              31.14,
+              42.06
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S8 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 5,
+        "cancelled_sessions": 1,
+        "cancelled_dates": [
+          "2026-07-15"
+        ],
+        "total_attendances": 50,
+        "unique_attendees": 50,
+        "rejected_requests": 3,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 6 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    },
+    {
+      "site_id": "S9",
+      "remote": true,
+      "registration_dedup": {
+        "raw_rows": 26,
+        "duplicate_rows_removed": 6,
+        "school_source_rows": 13,
+        "site_source_rows": 13
+      },
+      "funnel": {
+        "potential_beneficiaries": {
+          "point_estimate": 42.9,
+          "standard_error": 0.0,
+          "ci95": [
+            42.9,
+            42.9
+          ],
+          "observed_people": 20,
+          "observed_households": 20,
+          "basis": "站点 S9 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群"
+        },
+        "willing_to_attend": {
+          "point_estimate": 41.4,
+          "standard_error": 1.526,
+          "ci95": [
+            38.28,
+            44.52
+          ],
+          "observed_people": 19,
+          "observed_households": 19,
+          "basis": "站点 S9 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（至少一条登记表达意愿）"
+        },
+        "reachable_at_site_conditions": {
+          "point_estimate": 0.0,
+          "standard_error": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "observed_people": 0,
+          "observed_households": 0,
+          "basis": "站点 S9 关联登记去重人员；sample_weight 为家庭调查基础权重，方差按家庭聚类估计；结果仅外推至该站点同类服务人群（形式可供给且开放窗与可用窗存在 60 分钟交集）"
+        }
+      },
+      "self_reported_barriers_non_attenders": [
+        {
+          "reason": "no_audio",
+          "willing_people": 2,
+          "rows": 2,
+          "weighted_estimate": {
+            "point_estimate": 5.4,
+            "standard_error": 3.624,
+            "ci95": [
+              0.0,
+              12.8
+            ],
+            "observed_people": 2,
+            "observed_households": 2,
+            "basis": "站点 S9 自报原因为 no_audio 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "time_conflict",
+          "willing_people": 3,
+          "rows": 3,
+          "weighted_estimate": {
+            "point_estimate": 4.2,
+            "standard_error": 2.485,
+            "ci95": [
+              0.0,
+              9.28
+            ],
+            "observed_people": 3,
+            "observed_households": 3,
+            "basis": "站点 S9 自报原因为 time_conflict 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        },
+        {
+          "reason": "未声明",
+          "willing_people": 16,
+          "rows": 21,
+          "weighted_estimate": {
+            "point_estimate": 37.8,
+            "standard_error": 3.103,
+            "ci95": [
+              31.46,
+              44.14
+            ],
+            "observed_people": 17,
+            "observed_households": 17,
+            "basis": "站点 S9 自报原因为 未声明 的去重人员估计"
+          },
+          "provenance": "仅来自登记人本人自报，出席者不代答"
+        }
+      ],
+      "attendance_side_facts": {
+        "historical_sessions": 6,
+        "held_sessions": 6,
+        "cancelled_sessions": 0,
+        "cancelled_dates": [],
+        "total_attendances": 60,
+        "unique_attendees": 60,
+        "rejected_requests": 0,
+        "note": "取消场次出席为 0 属供给侧事实，不得计入需求下降；拒绝请求代表未被满足的需求"
+      },
+      "notes": [
+        "学校与站点来源有 6 条重复登记，已按人去重，未重复放大需求",
+        "未到场原因仅来自登记人自报，出席者不代答"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "report": "week_plan",
+  "week_start": "2026-08-03",
+  "metrics": {
+    "sessions": 13,
+    "locked_sessions": 2,
+    "minimum_frequency_sessions": 10,
+    "marginal_sessions": 1,
+    "unique_reachable_people": 79,
+    "weighted_reachable_people": 164.7,
+    "reachable_households": 60,
+    "remote_reachable_people": 20,
+    "unresolved_guarantee_gaps": [],
+    "estimated_vehicle_cost_yuan": 1760.0,
+    "cost_per_weighted_person_yuan": 10.686,
+    "staff_warnings": []
+  },
+  "vehicle_days": [
+    {
+      "vehicle_id": "V1",
+      "date": "2026-08-03",
+      "weekday": 0,
+      "route_feasible": true,
+      "feasibility_reasons": [],
+      "work_minutes": 450,
+      "drive_minutes": 135,
+      "service_minutes": 180,
+      "stops": [
+        {
+          "session_id": "CW1",
+          "site_id": "S7",
+          "window": "09:00-10:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": true,
+          "guarantee_class": "locked",
+          "reachable_people": 20,
+          "why": "已通知家庭 H001,H002 的服务承诺，时段与形式锁定"
+        },
+        {
+          "session_id": "PL-007",
+          "site_id": "S7",
+          "window": "10:00-11:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 20,
+          "why": "补齐每四周最低 2 场约定（偏远保障站点）"
+        },
+        {
+          "session_id": "CW2",
+          "site_id": "S4",
+          "window": "14:00-15:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": true,
+          "guarantee_class": "locked",
+          "reachable_people": 0,
+          "why": "已通知家庭 H003 的服务承诺，时段与形式锁定"
+        }
+      ],
+      "timeline": [
+        {
+          "kind": "depot_start",
+          "segment": "S1",
+          "from_min": 480,
+          "to_min": 480
+        },
+        {
+          "kind": "drive",
+          "segment": "S1->S7",
+          "from_min": 480,
+          "to_min": 540
+        },
+        {
+          "kind": "service",
+          "segment": "S7",
+          "from_min": 540,
+          "to_min": 600
+        },
+        {
+          "kind": "drive",
+          "segment": "S7->S7",
+          "from_min": 600,
+          "to_min": 600
+        },
+        {
+          "kind": "service",
+          "segment": "S7",
+          "from_min": 600,
+          "to_min": 660
+        },
+        {
+          "kind": "drive",
+          "segment": "S7->S4",
+          "from_min": 660,
+          "to_min": 705
+        },
+        {
+          "kind": "service",
+          "segment": "S4",
+          "from_min": 840,
+          "to_min": 900
+        },
+        {
+          "kind": "drive",
+          "segment": "S4->S1",
+          "from_min": 900,
+          "to_min": 930
+        },
+        {
+          "kind": "depot_end",
+          "segment": "S1",
+          "from_min": 930,
+          "to_min": 930
+        }
+      ]
+    },
+    {
+      "vehicle_id": "V1",
+      "date": "2026-08-04",
+      "weekday": 1,
+      "route_feasible": true,
+      "feasibility_reasons": [],
+      "work_minutes": 380,
+      "drive_minutes": 85,
+      "service_minutes": 180,
+      "stops": [
+        {
+          "session_id": "PL-008",
+          "site_id": "S1",
+          "window": "09:00-10:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 20,
+          "why": "补齐每四周最低 1 场约定"
+        },
+        {
+          "session_id": "PL-011",
+          "site_id": "S5",
+          "window": "11:00-12:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 20,
+          "why": "补齐每四周最低 1 场约定"
+        },
+        {
+          "session_id": "PL-009",
+          "site_id": "S2",
+          "window": "13:00-14:00",
+          "format": "audio",
+          "staff_id": "T1",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 1 场约定"
+        }
+      ],
+      "timeline": [
+        {
+          "kind": "depot_start",
+          "segment": "S1",
+          "from_min": 480,
+          "to_min": 480
+        },
+        {
+          "kind": "drive",
+          "segment": "S1->S1",
+          "from_min": 480,
+          "to_min": 480
+        },
+        {
+          "kind": "service",
+          "segment": "S1",
+          "from_min": 540,
+          "to_min": 600
+        },
+        {
+          "kind": "drive",
+          "segment": "S1->S5",
+          "from_min": 600,
+          "to_min": 635
+        },
+        {
+          "kind": "service",
+          "segment": "S5",
+          "from_min": 660,
+          "to_min": 720
+        },
+        {
+          "kind": "drive",
+          "segment": "S5->S2",
+          "from_min": 720,
+          "to_min": 750
+        },
+        {
+          "kind": "service",
+          "segment": "S2",
+          "from_min": 780,
+          "to_min": 840
+        },
+        {
+          "kind": "drive",
+          "segment": "S2->S1",
+          "from_min": 840,
+          "to_min": 860
+        },
+        {
+          "kind": "depot_end",
+          "segment": "S1",
+          "from_min": 860,
+          "to_min": 860
+        }
+      ]
+    },
+    {
+      "vehicle_id": "V2",
+      "date": "2026-08-03",
+      "weekday": 0,
+      "route_feasible": true,
+      "feasibility_reasons": [],
+      "work_minutes": 470,
+      "drive_minutes": 125,
+      "service_minutes": 240,
+      "stops": [
+        {
+          "session_id": "PL-005",
+          "site_id": "S9",
+          "window": "09:00-10:00",
+          "format": "paper",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 2 场约定（偏远保障站点）"
+        },
+        {
+          "session_id": "PL-006",
+          "site_id": "S9",
+          "window": "10:00-11:00",
+          "format": "paper",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 2 场约定（偏远保障站点）"
+        },
+        {
+          "session_id": "PL-003",
+          "site_id": "S8",
+          "window": "13:00-14:00",
+          "format": "audio",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 2 场约定（偏远保障站点）"
+        },
+        {
+          "session_id": "PL-004",
+          "site_id": "S8",
+          "window": "14:00-15:00",
+          "format": "audio",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 2 场约定（偏远保障站点）"
+        }
+      ],
+      "timeline": [
+        {
+          "kind": "depot_start",
+          "segment": "S1",
+          "from_min": 480,
+          "to_min": 480
+        },
+        {
+          "kind": "drive",
+          "segment": "S1->S9",
+          "from_min": 480,
+          "to_min": 535
+        },
+        {
+          "kind": "service",
+          "segment": "S9",
+          "from_min": 540,
+          "to_min": 600
+        },
+        {
+          "kind": "drive",
+          "segment": "S9->S9",
+          "from_min": 600,
+          "to_min": 600
+        },
+        {
+          "kind": "service",
+          "segment": "S9",
+          "from_min": 600,
+          "to_min": 660
+        },
+        {
+          "kind": "drive",
+          "segment": "S9->S8",
+          "from_min": 660,
+          "to_min": 680
+        },
+        {
+          "kind": "service",
+          "segment": "S8",
+          "from_min": 780,
+          "to_min": 840
+        },
+        {
+          "kind": "drive",
+          "segment": "S8->S8",
+          "from_min": 840,
+          "to_min": 840
+        },
+        {
+          "kind": "service",
+          "segment": "S8",
+          "from_min": 840,
+          "to_min": 900
+        },
+        {
+          "kind": "drive",
+          "segment": "S8->S1",
+          "from_min": 900,
+          "to_min": 950
+        },
+        {
+          "kind": "depot_end",
+          "segment": "S1",
+          "from_min": 950,
+          "to_min": 950
+        }
+      ]
+    },
+    {
+      "vehicle_id": "V2",
+      "date": "2026-08-04",
+      "weekday": 1,
+      "route_feasible": true,
+      "feasibility_reasons": [],
+      "work_minutes": 460,
+      "drive_minutes": 95,
+      "service_minutes": 180,
+      "stops": [
+        {
+          "session_id": "PL-010",
+          "site_id": "S3",
+          "window": "09:00-10:00",
+          "format": "paper",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 1 场约定"
+        },
+        {
+          "session_id": "PL-012",
+          "site_id": "S6",
+          "window": "13:00-14:00",
+          "format": "paper",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "minimum_frequency",
+          "reachable_people": 0,
+          "why": "补齐每四周最低 1 场约定"
+        },
+        {
+          "session_id": "PL-013",
+          "site_id": "S6",
+          "window": "14:00-15:00",
+          "format": "paper",
+          "staff_id": "T2",
+          "locked": false,
+          "guarantee_class": "marginal",
+          "reachable_people": 19,
+          "why": "边际评分 0.6700（新增加权可达 40.2 人，增量成本 60 元）"
+        }
+      ],
+      "timeline": [
+        {
+          "kind": "depot_start",
+          "segment": "S1",
+          "from_min": 480,
+          "to_min": 480
+        },
+        {
+          "kind": "drive",
+          "segment": "S1->S3",
+          "from_min": 480,
+          "to_min": 505
+        },
+        {
+          "kind": "service",
+          "segment": "S3",
+          "from_min": 540,
+          "to_min": 600
+        },
+        {
+          "kind": "drive",
+          "segment": "S3->S6",
+          "from_min": 600,
+          "to_min": 630
+        },
+        {
+          "kind": "service",
+          "segment": "S6",
+          "from_min": 780,
+          "to_min": 840
+        },
+        {
+          "kind": "drive",
+          "segment": "S6->S6",
+          "from_min": 840,
+          "to_min": 840
+        },
+        {
+          "kind": "service",
+          "segment": "S6",
+          "from_min": 840,
+          "to_min": 900
+        },
+        {
+          "kind": "drive",
+          "segment": "S6->S1",
+          "from_min": 900,
+          "to_min": 940
+        },
+        {
+          "kind": "depot_end",
+          "segment": "S1",
+          "from_min": 940,
+          "to_min": 940
+        }
+      ]
+    }
+  ],
+  "audit_trail": [
+    "增补 PL-013：S6 2026-08-04 paper，新增覆盖 19 人，评分 0.6700",
+    "剩余可行候选均无新增去重覆盖（只会重复服务已覆盖人员），停止增补；偏远站点保障由最低频率回溯单独保证"
+  ],
+  "guarantee_gaps": [],
+  "attendance_first_baseline": {
+    "metrics": {
+      "sessions": 9,
+      "locked_sessions": 0,
+      "minimum_frequency_sessions": 0,
+      "marginal_sessions": 9,
+      "unique_reachable_people": 60,
+      "weighted_reachable_people": 124.5,
+      "reachable_households": 60,
+      "remote_reachable_people": 20,
+      "unresolved_guarantee_gaps": [
+        {
+          "site_id": "S1",
+          "missing": 1,
+          "remote": false
+        },
+        {
+          "site_id": "S2",
+          "missing": 1,
+          "remote": false
+        },
+        {
+          "site_id": "S3",
+          "missing": 1,
+          "remote": false
+        },
+        {
+          "site_id": "S4",
+          "missing": 0,
+          "remote": false
+        },
+        {
+          "site_id": "S5",
+          "missing": 1,
+          "remote": false
+        },
+        {
+          "site_id": "S6",
+          "missing": 1,
+          "remote": false
+        },
+        {
+          "site_id": "S7",
+          "missing": 1,
+          "remote": true
+        },
+        {
+          "site_id": "S8",
+          "missing": 2,
+          "remote": true
+        },
+        {
+          "site_id": "S9",
+          "missing": 2,
+          "remote": true
+        }
+      ],
+      "estimated_vehicle_cost_yuan": 1580.0,
+      "cost_per_weighted_person_yuan": 12.691,
+      "staff_warnings": []
+    },
+    "comparison": {
+      "extra_people_covered_by_guarantee_plan": [
+        "P006",
+        "P015",
+        "P024",
+        "P033",
+        "P042",
+        "P051",
+        "P060",
+        "P069",
+        "P087",
+        "P096",
+        "P105",
+        "P114",
+        "P123",
+        "P132",
+        "P141",
+        "P150",
+        "P159",
+        "P168",
+        "P177"
+      ],
+      "people_only_in_baseline": [],
+      "baseline_missing_remote_sites": [],
+      "baseline_minimum_frequency_shortfalls": [
+        {
+          "site_id": "S7",
+          "minimum_required": 2,
+          "baseline_sessions": 1,
+          "shortfall": 1,
+          "remote": true
+        },
+        {
+          "site_id": "S8",
+          "minimum_required": 2,
+          "baseline_sessions": 1,
+          "shortfall": 1,
+          "remote": true
+        },
+        {
+          "site_id": "S9",
+          "minimum_required": 2,
+          "baseline_sessions": 1,
+          "shortfall": 1,
+          "remote": true
+        }
+      ],
+      "guarantee_plan_site_counts": {
+        "S1": 1,
+        "S2": 1,
+        "S3": 1,
+        "S4": 1,
+        "S5": 1,
+        "S6": 2,
+        "S7": 2,
+        "S8": 2,
+        "S9": 2
+      },
+      "baseline_site_counts": {
+        "S1": 1,
+        "S2": 1,
+        "S3": 1,
+        "S4": 1,
+        "S5": 1,
+        "S6": 1,
+        "S7": 1,
+        "S8": 1,
+        "S9": 1
+      },
+      "weighted_coverage_delta": 40.2,
+      "cost_delta_yuan": 180.0,
+      "interpretation": "保障计划优先补齐偏远最低频率，再按边际覆盖/成本增补；基线只按历史场均出席排满，常把每站压成 1 场，无法兑现偏远站点每四周 2 场的约定"
+    },
+    "audit_trail": [
+      "对照基线：按历史场均出席人数排序，不执行最低频率保障与边际覆盖规则"
+    ]
+  }
+}

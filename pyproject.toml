@@ -1,5 +1,12 @@
 [project]
 name = "reading-outreach-routing"
-version = "0.0.0"
+version = "0.1.0"
+description = "乡镇流动阅读服务的需求覆盖估计、周计划排期与承诺兑现复核（仅标准库）"
 requires-python = ">=3.11,<3.12"
 dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

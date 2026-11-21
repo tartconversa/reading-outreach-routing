@@ -1,0 +1,253 @@
+{
+  "report": "replan",
+  "rejected_changes": [],
+  "locked_route_violations": {},
+  "plan": {
+    "report": "week_plan",
+    "week_start": "2026-08-03",
+    "metrics": {
+      "sessions": 5,
+      "locked_sessions": 2,
+      "minimum_frequency_sessions": 0,
+      "marginal_sessions": 3,
+      "unique_reachable_people": 79,
+      "weighted_reachable_people": 164.7,
+      "reachable_households": 60,
+      "remote_reachable_people": 20,
+      "unresolved_guarantee_gaps": [],
+      "estimated_vehicle_cost_yuan": 910.0,
+      "cost_per_weighted_person_yuan": 5.525,
+      "staff_warnings": []
+    },
+    "vehicle_days": [
+      {
+        "vehicle_id": "V1",
+        "date": "2026-08-03",
+        "weekday": 0,
+        "route_feasible": true,
+        "feasibility_reasons": [],
+        "work_minutes": 450,
+        "drive_minutes": 135,
+        "service_minutes": 180,
+        "stops": [
+          {
+            "session_id": "CW1",
+            "site_id": "S7",
+            "window": "09:00-10:00",
+            "format": "audio",
+            "staff_id": "T1",
+            "locked": true,
+            "guarantee_class": "locked",
+            "reachable_people": 20,
+            "why": "已通知家庭 H001,H002 的服务承诺，时段与形式锁定"
+          },
+          {
+            "session_id": "PL-003",
+            "site_id": "S5",
+            "window": "11:00-12:00",
+            "format": "audio",
+            "staff_id": "T1",
+            "locked": false,
+            "guarantee_class": "marginal",
+            "reachable_people": 20,
+            "why": "边际评分 42.0000（新增加权可达 42.0 人，增量成本 1 元）"
+          },
+          {
+            "session_id": "CW2",
+            "site_id": "S4",
+            "window": "14:00-15:00",
+            "format": "audio",
+            "staff_id": "T1",
+            "locked": true,
+            "guarantee_class": "locked",
+            "reachable_people": 0,
+            "why": "已通知家庭 H003 的服务承诺，时段与形式锁定"
+          }
+        ],
+        "timeline": [
+          {
+            "kind": "depot_start",
+            "segment": "S1",
+            "from_min": 480,
+            "to_min": 480
+          },
+          {
+            "kind": "drive",
+            "segment": "S1->S7",
+            "from_min": 480,
+            "to_min": 540
+          },
+          {
+            "kind": "service",
+            "segment": "S7",
+            "from_min": 540,
+            "to_min": 600
+          },
+          {
+            "kind": "drive",
+            "segment": "S7->S5",
+            "from_min": 600,
+            "to_min": 625
+          },
+          {
+            "kind": "service",
+            "segment": "S5",
+            "from_min": 660,
+            "to_min": 720
+          },
+          {
+            "kind": "drive",
+            "segment": "S5->S4",
+            "from_min": 720,
+            "to_min": 740
+          },
+          {
+            "kind": "service",
+            "segment": "S4",
+            "from_min": 840,
+            "to_min": 900
+          },
+          {
+            "kind": "drive",
+            "segment": "S4->S1",
+            "from_min": 900,
+            "to_min": 930
+          },
+          {
+            "kind": "depot_end",
+            "segment": "S1",
+            "from_min": 930,
+            "to_min": 930
+          }
+        ]
+      },
+      {
+        "vehicle_id": "V2",
+        "date": "2026-08-03",
+        "weekday": 0,
+        "route_feasible": true,
+        "feasibility_reasons": [],
+        "work_minutes": 460,
+        "drive_minutes": 80,
+        "service_minutes": 120,
+        "stops": [
+          {
+            "session_id": "PL-004",
+            "site_id": "S1",
+            "window": "09:00-10:00",
+            "format": "audio",
+            "staff_id": "T2",
+            "locked": false,
+            "guarantee_class": "marginal",
+            "reachable_people": 20,
+            "why": "边际评分 0.3425（新增加权可达 41.1 人，增量成本 120 元）"
+          },
+          {
+            "session_id": "PL-005",
+            "site_id": "S6",
+            "window": "14:00-15:00",
+            "format": "paper",
+            "staff_id": "T2",
+            "locked": false,
+            "guarantee_class": "marginal",
+            "reachable_people": 19,
+            "why": "边际评分 0.1182（新增加权可达 40.2 人，增量成本 340 元）"
+          }
+        ],
+        "timeline": [
+          {
+            "kind": "depot_start",
+            "segment": "S1",
+            "from_min": 480,
+            "to_min": 480
+          },
+          {
+            "kind": "drive",
+            "segment": "S1->S1",
+            "from_min": 480,
+            "to_min": 480
+          },
+          {
+            "kind": "service",
+            "segment": "S1",
+            "from_min": 540,
+            "to_min": 600
+          },
+          {
+            "kind": "drive",
+            "segment": "S1->S6",
+            "from_min": 600,
+            "to_min": 640
+          },
+          {
+            "kind": "service",
+            "segment": "S6",
+            "from_min": 840,
+            "to_min": 900
+          },
+          {
+            "kind": "drive",
+            "segment": "S6->S1",
+            "from_min": 900,
+            "to_min": 940
+          },
+          {
+            "kind": "depot_end",
+            "segment": "S1",
+            "from_min": 940,
+            "to_min": 940
+          }
+        ]
+      }
+    ],
+    "audit_trail": [
+      "剩余可行候选均无新增去重覆盖（只会重复服务已覆盖人员），停止增补；偏远站点保障由最低频率回溯单独保证",
+      "无移除请求"
+    ],
+    "guarantee_gaps": []
+  },
+  "household_promises": [
+    {
+      "confirmed_id": "CW1",
+      "household": "H001",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P003",
+        "P004"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    },
+    {
+      "confirmed_id": "CW1",
+      "household": "H002",
+      "site_id": "S7",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P005",
+        "P006"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    },
+    {
+      "confirmed_id": "CW2",
+      "household": "H003",
+      "site_id": "S4",
+      "format": "audio",
+      "on": "2026-08-03",
+      "members": [
+        "P007",
+        "P008"
+      ],
+      "status": "kept",
+      "substitute_session_id": null,
+      "reason": "原锁定场次在计划中保留，时段形式未变"
+    }
+  ]
+}
